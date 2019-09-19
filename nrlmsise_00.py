@@ -1042,6 +1042,10 @@ def gtd7(Input, flags, output):
 /* ------------------------------------------------------------------- */
 /* ------------------------------- GTD7D ----------------------------- */
 /* ------------------------------------------------------------------- */
+This subroutine provides Effective Total Mass Density for output
+d[5] which includes contributions from "anomalous oxygen" which can
+affect satellite drag above 500 km. See the section "output" for
+additional details.
 '''
 def gtd7d(Input, flags, output):
     gtd7(Input, flags, output)
@@ -1055,6 +1059,7 @@ def gtd7d(Input, flags, output):
 /* ------------------------------------------------------------------- */
 /* -------------------------------- GHP7 ----------------------------- */
 /* ------------------------------------------------------------------- */
+To specify outputs at a pressure level (press) rather than at an altitude.
 '''
 def ghp7(Input, flags, output, press):
     bm = 1.3806E-19;
@@ -1131,6 +1136,7 @@ def ghp7(Input, flags, output, press):
 /* ------------------------------------------------------------------- */
 /* ------------------------------- GTS7 ------------------------------ */
 /* ------------------------------------------------------------------- */
+Thermospheric portion of NRLMSISE-00
 '''
 def gts7(Input, flags, output):
     '''
